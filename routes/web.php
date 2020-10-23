@@ -17,7 +17,7 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/pagina02', function () {
-    return view('pagina02');
+Route::get('/pagina02/{estilo}', function ($estilo) {
+    return view('pagina02', ['estilo'=>$estilo]);
 });
 

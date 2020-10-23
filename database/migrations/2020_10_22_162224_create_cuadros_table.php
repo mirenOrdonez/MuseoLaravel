@@ -17,10 +17,10 @@ class CreateCuadrosTable extends Migration
             $table->id();
             $table->string('titulo', 1024);
             $table->string('artista', 1024);
-            $table->year('año');
+            $table->integer('año');
             $table->string('estilo', 1024);
-            $table->string('descripcion', 10000);
-            $table->binary('imagen');
+            $table->text('descripcion');
+            $table->string('imagen', 1024);
         });
     }
 

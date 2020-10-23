@@ -3,12 +3,25 @@
 
 @section('titulo', 'Menú principal')
 
-@section('barralateral')
+@section('encabezado')
 @parent
-<p>Esta parte se añade a la barra lateral original (no la sobreescribe).</p>
+
 @endsection
 
 @section('contenido')
-<p>Este es el body de esta página.</p>
-<a href="{{ url('pagina02') }}" class="btn btn-xs btn-info pull-right">pagina 02</a>
-@endsection
+        <div class="row">
+            <div class="col-md-4">
+                <a href="{{ url('pagina02', ['abstracto']) }}" class="btn btn-info">ABSTRACTO</a>
+            </div>
+            <div class="col-md-4">
+                <a href="{{ url('pagina02', ['surrealismo']) }}" class="btn btn-info pull-right">SURREALISMO</a>
+            </div>
+            <div class="col-md-4">
+                <a href="{{ url('pagina02', ['impresionismo']) }}" class="btn btn-info pull-right">IMPRESIONISMO</a>
+            </div>
+        </div>
+    
+    <br><br>
+    
+    @endsection
+
