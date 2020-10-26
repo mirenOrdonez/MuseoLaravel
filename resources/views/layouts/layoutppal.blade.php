@@ -44,7 +44,7 @@
 
 <footer>
     <div class="container">
-        <p>MuseART®</p>
+        <p<b>MuseART®</b></p>
         <p>Página web de arte.</p>
         <p>2020</p>
     </div>
