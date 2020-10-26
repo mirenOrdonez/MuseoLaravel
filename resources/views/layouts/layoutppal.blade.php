@@ -4,9 +4,24 @@
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
     <!-- Styles -->
-    
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
+
+    <style>
+        body {
+            background-image: url("{{asset('/img/fondo1.jpg')}}");
+        }
+        h1 {
+            font-size: 50px;
+            text-align: center;
+        }
+        .container {
+            margin-top: 30px;
+        }
+        footer {
+            text-align: center;
+        }
+    </style>
+    
 
     <title>MUSEART - @yield('titulo')</title>
 </head>
@@ -14,15 +29,25 @@
 <body>
     @section('encabezado')
         <div class="container">
-            <div class="row justify-content-center">
-                <h1>DESCUBRE EL CUADRO</h1>
-            </div>
+            <h1>DESCUBRE EL CUADRO</h1>
+            <hr>
         </div>
         
     @show
-    <div class="container">
-        @yield('contenido')
-    </div>
+
+    @section('contenido')
+        <div class="container">
+        
+        </div>
+    @show
 </body>
+
+<footer>
+    <div class="container">
+        <p>MuseART®</p>
+        <p>Página web de arte.</p>
+        <p>2020</p>
+    </div>
+</footer>
 
 </html>
