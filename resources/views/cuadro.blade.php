@@ -13,9 +13,8 @@
 @section('contenido')
 <div class="container">
     <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6"> <!-- IMAGEN -->
         <img src= "{{asset('img/'.$cuadro[0]->imagen. '')}}"  height="400px" width="500px">
-        <!--{{Storage::url($cuadro[0]->imagen)}}-->
         </div>
         <div class="col-md-6">
             <p> {{$cuadro[0]->descripcion}}</p>
